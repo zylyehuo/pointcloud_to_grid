@@ -5,3 +5,21 @@
 ![test.gif](./doc/test.gif)
 
 ![results.png](./doc/results.png)
+
+# 使用步骤
+```bash
+mkdir -p ~/pointcloud_to_grid/src
+cd ~/pointcloud_to_grid/src
+git clone git@github.com:zylyehuo/pointcloud_to_grid.git
+```
+```bash
+# 获取二维栅格地图的参数
+# 运行脚本后播放 bag 数据
+cd ~/pointcloud_to_grid/src/pointcloud_to_grid/scripts
+python3 cloud_bounds.py
+```
+```bash
+cd ~/lidar2base
+source install/setup.bash
+ros2 launch pointcloud_to_grid demo.launch.py topic:=<点云话题>
+```
