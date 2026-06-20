@@ -10,7 +10,8 @@ class CloudBounds(Node):
         super().__init__('cloud_bounds')
         self.sub = self.create_subscription(
             PointCloud2,
-            '/rslidar_points',
+            #'/rslidar_points',
+            '/lidar_points',
             self.callback,
             10
         )
