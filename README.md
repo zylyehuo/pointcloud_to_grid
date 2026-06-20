@@ -19,7 +19,8 @@ cd ~/pointcloud_to_grid/src/pointcloud_to_grid/scripts
 python3 cloud_bounds.py
 ```
 ```bash
+# 搭配定位程序使用，订阅定位程序输出的点云话题
 cd ~/lidar2base
 source install/setup.bash
-ros2 launch pointcloud_to_grid demo.launch.py topic:=<点云话题>
+ros2 launch pointcloud_to_grid demo.launch.py topic:=<定位程序输出的点云话题>
 ```
