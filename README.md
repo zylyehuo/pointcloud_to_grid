@@ -2,4 +2,6 @@
 
 # 效果图
 
-![2026-06-20-13-29-44](./doc/2026-06-20-13-29-44.gif)
+![test.gif](./doc/test.gif)
+
+![results.png](./doc/results.png)
